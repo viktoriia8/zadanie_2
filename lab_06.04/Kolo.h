@@ -16,6 +16,6 @@ public:
 	int getKolo();
 	string getRezultat();
 	Kolo();
-	void WyswietlKolo(Kolo *kolo);
-	//friend class Gracz;
+	void WyswietlKolo();
+	
 };

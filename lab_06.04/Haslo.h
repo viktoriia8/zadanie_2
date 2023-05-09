@@ -15,13 +15,14 @@ class Haslo {
 	int n;
 	int maska[100];
 public:
+	int zgadl;
+	void ZmienMaske(char znak);
 	int getN();
 	string getHaslo();
 	Haslo();
 	void WyswietlHasla();
-	//string getHaslo();
 	void WyswietlMaske();
 	int jestSamogloska(char c);
-	char* getcharHaslo();
+	
 	int* getMaska();
 };

@@ -33,9 +33,6 @@
     <ClCompile Include="Haslo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Gracze.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="dane.txt">
@@ -49,13 +46,7 @@
     <ClInclude Include="Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Kolor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Kolo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Gracze.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Haslo.h">

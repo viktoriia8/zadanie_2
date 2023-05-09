@@ -11,8 +11,10 @@ Kolo::Kolo() {
         rezultat = "Strata kolejki";
     else if (Kolo_ == -1)
         rezultat = "Bankrut";
-    else
-        rezultat = Kolo_;
+    else {
+        
+        rezultat =to_string(Kolo_);
+    }
 };
 
 
@@ -23,29 +25,8 @@ string Kolo::getRezultat() {
     return rezultat;
 };
 
-void Kolo::WyswietlKolo(Kolo* kolo) {
-    cout << "\033[1;31m" << getRezultat() << "\033[0m" << endl;
+void Kolo::WyswietlKolo() {
+    cout << "\033[1;34m" << getRezultat() << "\033[0m" << endl;
 };
 
-    // Strata kolejki i bankrut
-    /*if ((kolo->Kolo_ == 0) || (kolo->Kolo_ == -1))
-    {
-        if (kolo->Kolo_ == -1) // bankrut
-            gracze[kolejka].kasa = 0;
-
-        kolejka = (kolejka + 1) % 3;
-        suma = 1;
-        cout << endl << "=================================================" << endl;
-
-        // TODO
-        // sleep for
-        // kupowanie samoglosek
-
-        continue;
-
-    }
-
-
-
-
-};*/
+    

@@ -8,6 +8,7 @@
 #include <vector>
 #include <cstring>
 #include <cassert>
+using namespace std;
 class Kolo;
 
 class Gracz {
@@ -15,7 +16,7 @@ class Gracz {
     int kasa;
     int portfel;
 public:
-    int nr;
+    //int nr;
     Gracz(string name);//, int k, int p);
   // friend string Kolo::getRezultat();
     void setKasa(int *kolejka,Kolo kolo);

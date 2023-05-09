@@ -6,7 +6,7 @@ using namespace std;
 Gracz::Gracz(string name){// int k=0, int p=0) {
 	imie = name;
 	kasa = 0;
-	portfel = 0;
+	portfel = 0;//kasa z wygranych rund
 	
 	//kasa = k;
 	//portfel = p;
@@ -30,17 +30,3 @@ string Gracz::getImie() {
 int Gracz::getPortfel() {
 	return portfel;
 };
-/*void Gracz::textPlayers(int* kolejka)
-{
-	int i;
-	std::cout << "\n";
-	for (i = 0; i < 3; i++) {
-		if (i == *kolejka) {
-			cout << "\033[1;34m";
-		}
-		cout << gracze[i].imie << "\t" << gracze[i].kasa << "\n";
-		cout << "\033[0m";
-
-	}
-	cout << "\n";
-}*/

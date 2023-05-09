@@ -3,6 +3,7 @@ using namespace std;
 
 Haslo::Haslo() {
     //vector<string> hasla;
+    setlocale(LC_CTYPE, "Polish");
     ifstream strum;
     strum.open("dane.txt");
 
@@ -30,6 +31,17 @@ Haslo::Haslo() {
             maska[i] = 0;
         else
             maska[i] = 1;
+    }
+    zgadl = 0;
+};
+void Haslo::ZmienMaske(char znak) {
+    zgadl = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if ((haslo[i] == znak) && (maska[i] == 1)) {
+            maska[i] = 0;
+            zgadl++;
+        }
     }
 };
 
@@ -76,12 +88,7 @@ string Haslo::getHaslo() {
 
    return haslo;
 };
-char* Haslo::getcharHaslo(){
-    string tab = haslo;
-    char* tablica = new char[tab.size() + 1];
-    strcpy(tablica, tab.c_str());
-    return tablica;
-}
+
 int* Haslo::getMaska() {
     return maska;
 };
