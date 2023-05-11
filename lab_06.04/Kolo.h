@@ -17,5 +17,9 @@ public:
 	string getRezultat();
 	Kolo();
 	void WyswietlKolo();
+	friend ostream& operator<<(ostream& os, const Kolo kolo) {
+		os<< "\033[1;34m" << kolo.rezultat << "\033[0m" << endl;
+		return os;
+	};
 	
 };

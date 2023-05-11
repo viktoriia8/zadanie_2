@@ -103,7 +103,7 @@ int main(){
                 Kolo kolo;
                 int portfel = Gracze[kolejka].getPortfel();
                 int rezultat_w = 99999;
-                Gracze[kolejka].zmienPortfel(portfel,rezultat_w);
+                Gracze[kolejka].zmienPortfel(rezultat_w);
                 break;
             }
             else
@@ -118,7 +118,8 @@ int main(){
             }
         }else {//wybor nr 2
             Kolo kolo;
-            kolo.WyswietlKolo();
+            cout << kolo;
+            //kolo.WyswietlKolo();
             cout << Gracze[kolejka].getImie() << ": Podaj litere\n";
             char znak=WczytajZnak();
             if (haslo.jestSamogloska(znak)) 
@@ -130,7 +131,7 @@ int main(){
             {
                 cout << "OK";
                 int portfel_ = Gracze[kolejka].getPortfel();
-                Gracze[kolejka].zmienPortfel(portfel_,stoi(kolo.getRezultat())*haslo.zgadl);
+                Gracze[kolejka].zmienPortfel(stoi(kolo.getRezultat())*haslo.zgadl);
 
                 cout << endl << Gracze[kolejka].getImie() << "\033[1;32m " << Gracze[kolejka].getPortfel() << "\033[0m\n";
 

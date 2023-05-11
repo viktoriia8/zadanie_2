@@ -15,6 +15,7 @@ class Haslo {
 	int n;
 	int maska[100];
 public:
+	//int maska[100];
 	int zgadl;
 	void ZmienMaske(char znak);
 	int getN();
@@ -25,4 +26,18 @@ public:
 	int jestSamogloska(char c);
 	
 	int* getMaska();
+	/*friend ostream& operator<<(ostream& os, const Haslo haslo) {
+	os << "\033[47m" << "\033[31m";
+		for (int i = 0; i < haslo.n; i++)
+		{
+			if (haslo.maska[i] == 1)
+				os << ".";
+			else
+				os << haslo.haslo[i];
+		}
+												//haslo.WyswietlMaske()
+		os << "\033[0m";
+		os << endl;
+	return os;
+    };*/
 };

@@ -21,9 +21,6 @@
     <ClCompile Include="Gracz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Kolor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Kolo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

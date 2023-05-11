@@ -14,15 +14,14 @@ Gracz::Gracz(string name){// int k=0, int p=0) {
 void Gracz::setKasa(int* kolejka, Kolo kolo) {
 	string rezultat_temp =kolo.Kolo::getRezultat();
 	if (rezultat_temp == "Bankrut") {
-		zmienPortfel(0, 0);
+		zmienPortfel( 0);
 	}
 	else if (rezultat_temp == "Strata kolejki")
 		*kolejka = (*kolejka + 1) % 3;
-	
 }
 
-void Gracz::zmienPortfel(int portfel,int zmiana) {
-	this->portfel = portfel + zmiana;
+void Gracz::zmienPortfel(int zmiana) {
+	this->portfel += zmiana;
 }
 string Gracz::getImie() {
 	return imie;

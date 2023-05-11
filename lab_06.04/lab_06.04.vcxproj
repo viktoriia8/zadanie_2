@@ -130,7 +130,6 @@
     <ClCompile Include="Gracz.cpp" />
     <ClCompile Include="Haslo.cpp" />
     <ClCompile Include="Kolo.cpp" />
-    <ClCompile Include="Kolor.cpp" />
     <ClCompile Include="lab_06.04.cpp" />
     <ClCompile Include="Menu.cpp" />
   </ItemGroup>

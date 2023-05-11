@@ -20,7 +20,7 @@ public:
     Gracz(string name);//, int k, int p);
   // friend string Kolo::getRezultat();
     void setKasa(int *kolejka,Kolo kolo);
-    void zmienPortfel(int portfel,int zmiana);
+    void zmienPortfel(int zmiana);
     //void textPlayers(int *kolejka);
     string getImie();
     int getPortfel();
