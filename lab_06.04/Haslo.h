@@ -26,18 +26,11 @@ public:
 	int jestSamogloska(char c);
 	
 	int* getMaska();
-	/*friend ostream& operator<<(ostream& os, const Haslo haslo) {
-	os << "\033[47m" << "\033[31m";
-		for (int i = 0; i < haslo.n; i++)
-		{
-			if (haslo.maska[i] == 1)
-				os << ".";
-			else
-				os << haslo.haslo[i];
-		}
-												//haslo.WyswietlMaske()
-		os << "\033[0m";
-		os << endl;
-	return os;
-    };*/
+	friend ostream& operator<<(ostream& os, const Haslo& haslo) {
+		os << haslo.haslo;
+		return os;
+	}
+	bool operator==(const Haslo& other) const {
+		return haslo == other.haslo;
+	}
 };

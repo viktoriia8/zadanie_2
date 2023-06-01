@@ -25,4 +25,16 @@ public:
     string getImie();
     int getPortfel();
     friend class Kolo;
+    //friend ostream& operator+(ostream& os,)
+    friend Gracz operator+(Gracz gracz, int r);
+    Gracz& operator+=(int zmiana) {
+        this->portfel += zmiana;
+        return *this;
+    }
+
+    friend ostream& operator<<(ostream& os, const Gracz gracz) {
+        os << "Imiê: " << gracz.imie << std::endl;
+        os << "Portfel: " << gracz.portfel << std::endl;
+        return os;
+    }
 };

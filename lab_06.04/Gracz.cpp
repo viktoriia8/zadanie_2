@@ -29,3 +29,8 @@ string Gracz::getImie() {
 int Gracz::getPortfel() {
 	return portfel;
 };
+
+//zmienPortfel???
+//Gracz operator+(Gracz gracz, int r) {
+//	return Gracz(gracz.portfel+=r);
+//};

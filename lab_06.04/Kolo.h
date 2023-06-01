@@ -21,5 +21,7 @@ public:
 		os<< "\033[1;34m" << kolo.rezultat << "\033[0m" << endl;
 		return os;
 	};
+
+
 	
 };
